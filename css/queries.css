@@ -1,0 +1,94 @@
+@media (max-width: 82em) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+  .project-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .project-info {
+    text-align: center;
+  }
+  .btn-project {
+    margin: 0 auto;
+  }
+  .contact-form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 63em) {
+  .project-img {
+    width: 100%;
+  }
+  .contact-form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 49em) {
+  .nav-container {
+    flex-direction: column;
+    color: red;
+  }
+  .logo {
+    margin-bottom: 3rem;
+  }
+  .heading-primary {
+    width: 40rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .about h2 {
+    width: 40rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+
+  .about p {
+    padding: 0 5rem;
+  }
+
+  .social {
+    padding-bottom: 22rem;
+  }
+
+  .skills {
+    padding: 2rem;
+  }
+
+  .skill-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .skill-logos svg {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .site,
+  .repo {
+    padding: 1.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 38em) {
+  .project {
+    padding: 2rem;
+  }
+  html {
+    font-size: 50%;
+  }
+  .site,
+  .repo {
+    padding: 0.5rem;
+  }
+  .work {
+    padding: 45rem 3rem 10rem;
+  }
+}

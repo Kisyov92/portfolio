@@ -14,6 +14,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  position: relative;
 }
 
 .header {
@@ -21,7 +22,8 @@ body {
     url("../img/james-webb-telescope.webp");
   background-position: center top;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  height: 80rem;
 }
 
 .nav-container {
@@ -89,6 +91,7 @@ body {
   padding: 0.5em 0.8em;
   border-radius: 25px;
   background-color: #43434399;
+  text-decoration: none;
 }
 
 .btn-hero:hover {
@@ -108,9 +111,9 @@ body {
 }
 
 .about {
-  width: 70rem;
+  max-width: 70rem;
   margin: 0 auto;
-  padding-top: 15rem;
+  padding-top: 13rem;
   text-align: center;
 }
 
@@ -119,6 +122,7 @@ body {
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .about p {
@@ -134,8 +138,12 @@ body {
   padding-bottom: 15rem;
 }
 
+.social svg {
+  width: 5rem;
+  height: 5rem;
+}
+
 .skills {
-  font-size: 3.6rem;
   background-color: #e0e0e0;
   color: #333;
   letter-spacing: 1px;
@@ -149,15 +157,19 @@ body {
 }
 
 .skill-logos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
 }
 
 .section-heading {
   margin-bottom: 5rem;
+  padding-top: 1rem;
 }
 
 .section-heading h3 {
+  color: #333;
+  font-size: 3.6rem;
   text-align: center;
   padding-bottom: 0.7rem;
 }
@@ -170,5 +182,161 @@ body {
   left: 0;
   margin: 0 auto;
   width: 10rem;
+  border-radius: 2.5rem;
+}
+
+/* MY WORK SECTION */
+
+.work {
+  padding: 45rem 10rem 10rem;
+}
+
+.project {
+  background-color: #e0e0e0;
+  border-radius: 2.5rem;
+  padding: 5rem 5rem;
+
+  display: grid;
+  grid-template-columns: 55rem 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.project-img img {
+  width: 100%;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-info h3 {
+  font-size: 3.2rem;
+  color: #333;
+  letter-spacing: 1.3px;
+}
+
+.project-info p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.btn-project {
+  display: flex;
+  gap: 1em;
+}
+
+.site {
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+
+  border: none;
+  color: #fff;
+  background-color: #171d3d;
+  letter-spacing: 1.2px;
+}
+
+.site:hover {
+  background-color: #262f61;
+  transition: 0.3s ease-in-out;
+}
+
+.repo {
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+
+  border: none;
+  background-color: #743f5b4d;
+  color: #171d3d;
+  border: 5px solid #743f5b;
+  letter-spacing: 1.2px;
+}
+
+.repo:hover {
+  background-color: #743f5b;
+  border-color: #743f5b;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.contact {
+  background-color: #e0e0e0;
+  padding: 8rem 0;
+}
+
+.contact h3 {
+  color: #333;
+}
+
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  fill: #743f5b;
+}
+
+.contact-form {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #171d3d;
+  width: 40%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0 auto 8rem;
+  border-radius: 2.5rem;
+}
+
+.contact-form label {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form input {
+  padding: 1.5rem;
+  background-color: #e0e0e0;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-family: inherit;
+}
+.contact-form textarea {
+  padding: 1.5rem 1.5rem 10rem 1.5rem;
+  margin-bottom: 3rem;
+  background-color: #e0e0e0;
+  font-size: 2rem;
+  font-family: inherit;
+}
+
+.btn-submit {
+  margin: 0 auto;
+  color: #e0e0e0;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: 2px solid white;
   border-radius: 25px;
+  background-color: #252f65;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-submit:disabled {
+  cursor: not-allowed;
 }
