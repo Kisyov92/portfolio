@@ -1,6 +1,7 @@
 @media (max-width: 82em) {
   .project {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
   .project-img {
     width: 80%;
@@ -8,6 +9,7 @@
   }
   .project-info {
     text-align: center;
+    margin-bottom: 20rem;
   }
   .btn-project {
     margin: 0 auto;
