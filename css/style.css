@@ -281,6 +281,13 @@ body {
   color: #333;
 }
 
+.contact .social svg {
+  fill: #171d3d;
+}
+.contact .social {
+  padding-bottom: 3rem;
+}
+
 .contact-footer {
   position: absolute;
   bottom: 0;
