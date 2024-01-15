@@ -17,6 +17,9 @@
   .contact-form {
     width: 60%;
   }
+  .project-info:last-child {
+    margin: 2rem;
+  }
 }
 
 @media (max-width: 63em) {
@@ -81,7 +84,7 @@
 
 @media (max-width: 38em) {
   .project {
-    padding: 2rem;
+    padding: 10rem 2rem 2rem;
   }
   html {
     font-size: 50%;
