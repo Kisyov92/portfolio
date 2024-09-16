@@ -354,3 +354,8 @@ div h4 {
 .btn-submit:disabled {
   cursor: not-allowed;
 }
+
+.btn-project-fullstack .site,
+.btn-project-fullstack .repo {
+  padding: 1rem 2rem;
+}
