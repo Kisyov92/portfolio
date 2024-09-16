@@ -14,7 +14,7 @@
   }
   .project-info {
     text-align: center;
-    margin-bottom: 20rem;
+    margin-bottom: 7rem;
   }
   .btn-project {
     margin: 0 auto;
@@ -24,6 +24,12 @@
   }
   .project-info:last-child {
     margin: 2rem;
+  }
+  .project-clone {
+    margin-bottom: 7rem;
+  }
+  .project-clone:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -85,6 +91,12 @@
     padding: 1.5rem;
     line-height: 1.5;
   }
+  .btn-project-fullstack {
+    flex-direction: column;
+  }
+  .work {
+    padding: 10rem 3rem 10rem;
+  }
 }
 
 @media (max-width: 38em) {
@@ -98,10 +110,7 @@
   .repo {
     padding: 0.5rem;
   }
-  .work {
-    padding: 10rem 3rem 10rem;
-  }
-  .btn-project-fullstack {
-    flex-direction: column;
+  .clones-description {
+    font-size: 16px;
   }
 }

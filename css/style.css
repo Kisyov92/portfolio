@@ -203,6 +203,10 @@ body {
   row-gap: 10rem;
 }
 
+.project p {
+  margin-bottom: 1.5rem;
+}
+
 .project-img img,
 .project-clone img {
   width: 100%;
@@ -236,7 +240,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
 }
 
 .project-info h3 {
