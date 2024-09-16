@@ -101,4 +101,7 @@
   .work {
     padding: 10rem 3rem 10rem;
   }
+  .btn-project-fullstack {
+    flex-direction: column;
+  }
 }
